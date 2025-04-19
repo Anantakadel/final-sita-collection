@@ -1,0 +1,464 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Built with jdoodle.ai - Sita Collection offering premium clothing and accessories for all styles in Thankot, Chandragiri" />
+  <meta property="og:title" content="Sita Collection | Premium Clothing & Accessories" />
+  <meta property="og:description" content="Built with jdoodle.ai - Discover our curated collection of stylish and high-quality fashion items at Sita Collection" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwzfHxmYXNoaW9uJTIwY2xvdGhpbmclMjBzdG9yZSUyMGJvdXRpcXVlfGVufDB8fHx8MTc0NTA2ODgxMXww&ixlib=rb-4.0.3&fit=fillmax&h=600&w=800" />
+  <title>Sita Collection | Premium Clothing & Accessories</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>For extra discounts and special offers, visit our shop at Thankot, CheckPost Chandragiri!</p>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>SITA COLLECTION</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="login-nav">Login</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a>
+          <a href="#" id="user-icon"><i class="fa-solid fa-user"></i></a>
+          <a href="https://wa.me/9779841588713" class="whatsapp-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" id="login-nav-mobile">Login</a></li>
+      <li><a href="#" id="register-nav-mobile">Register</a></li>
+      <li><a href="https://wa.me/9779841588713" target="_blank"><i class="fab fa-whatsapp"></i> Chat with us</a></li>
+    </ul>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Premium Fashion Collection</h2>
+        <p>Discover the latest trends in fashion at Sita Collection</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="filter-container">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="clothing">Clothing</button>
+        <button class="filter-btn" data-category="shoes">Shoes</button>
+        <button class="filter-btn" data-category="accessories">Accessories</button>
+      </div>
+      <div class="products-grid" id="products-container">
+        <!-- Products will be loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="container">
+      <div class="banner-content">
+        <h2>Visit Our Store for Extra Discounts!</h2>
+        <p>Get exclusive in-store discounts and special offers at our Thankot shop</p>
+        <a href="#contact" class="btn">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Sita Collection is a premium fashion destination located in Thankot, offering the latest trends in clothing, shoes, and accessories. We curate high-quality products from around the world to bring you a unique and stylish collection.</p>
+          <p>Our mission is to make fashion accessible to everyone while maintaining the highest standards of quality and sustainability. Visit our store at Thankot, CheckPost Chandragiri (at Chandragiri mart attached to Chandragiri cooperative pvt ltd) for exclusive deals!</p>
+          <div class="about-cta">
+            <a href="https://wa.me/9779841588713" class="whatsapp-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> Chat with Us
+            </a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwzfHxmYXNoaW9uJTIwY2xvdGhpbmclMjBzdG9yZSUyMGJvdXRpcXVlfGVufDB8fHx8MTc0NTA2ODgxMXww&ixlib=rb-4.0.3&fit=fillmax&h=600&w=800" alt="Sita Collection store interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Thankot, CheckPost Chandragiri<br>(at Chandragiri mart attached to Chandragiri cooperative pvt ltd)</p>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>sitacollection1234@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+977-9841588713</p>
+          </div>
+          <div class="info-item">
+            <a href="https://wa.me/9779841588713" class="whatsapp-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be loaded dynamically -->
+      </div>
+      <div class="cart-total">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+      </div>
+      <button id="checkout-btn" class="btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content product-modal-content">
+      <span class="close">&times;</span>
+      <div id="product-detail">
+        <!-- Product details will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <div class="login-info">
+        <p>Don't have an account? <a href="#" id="register-link">Register here</a></p>
+        <p>Demo accounts:</p>
+        <p>Admin - admin@example.com / admin123</p>
+        <p>User - user@example.com / user123</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Create Account</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="register-name">Full Name</label>
+          <input type="text" id="register-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="register-phone">Phone Number</label>
+          <input type="tel" id="register-phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="register-confirm-password">Confirm Password</label>
+          <input type="password" id="register-confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+      </form>
+      <div class="login-info">
+        <p>Already have an account? <a href="#" id="login-link">Login here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard Modal -->
+  <div id="admin-modal" class="modal">
+    <div class="modal-content admin-modal-content">
+      <span class="close">&times;</span>
+      <h2>Admin Dashboard</h2>
+      <div class="admin-tabs">
+        <button class="admin-tab active" data-tab="products">Products</button>
+        <button class="admin-tab" data-tab="orders">Orders</button>
+      </div>
+      <div class="admin-content">
+        <div class="admin-tab-content active" id="admin-products">
+          <button id="add-product-btn" class="btn">Add New Product</button>
+          <div class="admin-products-list">
+            <!-- Products will be loaded dynamically -->
+          </div>
+        </div>
+        <div class="admin-tab-content" id="admin-orders">
+          <div class="admin-orders-list">
+            <!-- Orders will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add/Edit Product Modal -->
+  <div id="product-form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="product-form-title">Add New Product</h2>
+      <form id="product-form">
+        <input type="hidden" id="product-id">
+        <div class="form-group">
+          <label for="product-name">Product Name</label>
+          <input type="text" id="product-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="product-price">Price (Rs.)</label>
+          <input type="number" id="product-price" name="price" step="0.01" min="0" required>
+        </div>
+        <div class="form-group">
+          <label for="product-description">Description</label>
+          <textarea id="product-description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="product-category">Category</label>
+          <select id="product-category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="clothing">Clothing</option>
+            <option value="shoes">Shoes</option>
+            <option value="accessories">Accessories</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="product-image">Image URL</label>
+          <input type="text" id="product-image" name="image" required>
+        </div>
+        <div class="form-group">
+          <label for="product-stock">Stock</label>
+          <input type="number" id="product-stock" name="stock" min="0" required>
+        </div>
+        <button type="submit" class="btn">Save Product</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content checkout-modal-content">
+      <span class="close">&times;</span>
+      <h2>Checkout</h2>
+      
+      <!-- Step 1: Review Items -->
+      <div class="checkout-step active">
+        <h3>Review Your Order</h3>
+        <div id="checkout-items">
+          <!-- Checkout items will be loaded dynamically -->
+        </div>
+        <div class="checkout-summary">
+          <div class="checkout-summary-row">
+            <span>Subtotal:</span>
+            <span>Rs. <span id="checkout-total">0.00</span></span>
+          </div>
+          <div class="checkout-summary-row">
+            <span>Shipping:</span>
+            <span>Rs. 150.00</span>
+          </div>
+          <div class="checkout-summary-row total">
+            <span>Total:</span>
+            <span>Rs. <span id="checkout-grand-total">0.00</span></span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 2: Shipping Information -->
+      <div class="checkout-step">
+        <h3>Shipping Information</h3>
+        <form id="checkout-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkout-first-name">First Name</label>
+              <input type="text" id="checkout-first-name" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout-last-name">Last Name</label>
+              <input type="text" id="checkout-last-name" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="checkout-email">Email</label>
+            <input type="email" id="checkout-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout-address">Address</label>
+            <input type="text" id="checkout-address" name="address" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkout-city">City</label>
+              <input type="text" id="checkout-city" name="city" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout-zip">Postal Code</label>
+              <input type="text" id="checkout-zip" name="zip" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="checkout-country">Country</label>
+            <select id="checkout-country" name="country" required>
+              <option value="NP" selected>Nepal</option>
+              <option value="IN">India</option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="checkout-phone">Phone</label>
+            <input type="tel" id="checkout-phone" name="phone" required>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Step 3: Payment Information -->
+      <div class="checkout-step">
+        <h3>Payment Information</h3>
+        <div class="payment-methods">
+          <div class="payment-method">
+            <input type="radio" id="payment-cash" name="payment-method" value="cash" checked>
+            <label for="payment-cash">Cash on Delivery</label>
+          </div>
+          
+          <div class="payment-method">
+            <input type="radio" id="payment-esewa" name="payment-method" value="esewa">
+            <label for="payment-esewa">eSewa</label>
+          </div>
+          
+          <div class="payment-method">
+            <input type="radio" id="payment-khalti" name="payment-method" value="khalti">
+            <label for="payment-khalti">Khalti</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Order Confirmation -->
+      <div id="order-confirmation">
+        <div class="order-success">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Order Placed Successfully!</h3>
+          <p>Thank you for your purchase. Your order has been placed and will be processed shortly.</p>
+          <p>A confirmation email has been sent to your email address.</p>
+        </div>
+      </div>
+      
+      <div class="checkout-actions">
+        <button id="checkout-back-btn" class="btn btn-secondary">Back</button>
+        <button id="checkout-next-btn" class="btn">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>SITA COLLECTION</h3>
+          <p>Your premium fashion destination in Thankot</p>
+          <div class="social-icons">
+            <a href="https://wa.me/9779841588713" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Subscribe to our Newsletter</h4>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button>
+          </div>
+          <p class="store-hours">
+            <strong>Store Hours:</strong><br>
+            Mon-Sat: 10:00 AM - 7:00 PM<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sita Collection. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
+ 
